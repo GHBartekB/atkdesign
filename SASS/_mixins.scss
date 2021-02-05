@@ -1,0 +1,15 @@
+@import "_variables";
+
+@mixin mq($breakpoint) {
+    $size: map-get($map: $breakpoints, $key:$breakpoint);
+
+    @if($size) {
+        @media #{$size} {
+            @content;
+        }
+    }
+
+    @else {
+        @error '"#{$breakpoint}" - brak wielkości';
+    }
+}

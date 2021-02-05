@@ -1,0 +1,27 @@
+.atkdesign {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #BE5000;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top-module {
+  width: 100vw;
+  height: 300px;
+  background-color: red;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (min-width: 1600px) {
+  .top-module {
+    height: 500px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
