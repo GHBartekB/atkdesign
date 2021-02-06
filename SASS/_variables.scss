@@ -1,7 +1,8 @@
 $main-color: #BE5000;
 $btn-color: #F16C20;
 
-$breakpoints: (smartphone: (min-width:460px),
+$breakpoints: (
+    smartphone: (min-width:460px),
     smartphone-large: (min-width:640px),
     tablet: (min-width:800px),
     tablet-large:(min-width:1024px),

@@ -1,33 +1,4 @@
 @import "_variables";
 @import "_mixins";
-
-// body {
-//     margin: 0;
-//     padding: 0;
-//     box-sizing: border-box;
-// }
-
-.atkdesign {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: $main-color;
-}
-
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.top-module {
-    width: 100vw;
-    height: 300px;
-    background-color: red;
-
-    box-sizing: border-box;
-
-    @include mq(desktop-medium) {
-        height: 500px;
-    }
-
-}
+@import "_base";
+@import "_top-module";

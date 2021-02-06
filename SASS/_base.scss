@@ -1,0 +1,14 @@
+@import "_variables";
+@import "_mixins";
+
+.atkdesign {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $main-color;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
