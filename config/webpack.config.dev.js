@@ -1,11 +1,10 @@
-module.exports = {
+const path = require('path');
 
+module.exports = {
     mode: 'development',
     entry: './src/index.js',
     output: {
         filename: 'dev.js',
-        path: __dirname + '/build',
-
+        path: path.resolve(__dirname, '../', 'build' )
     }
-
 }
