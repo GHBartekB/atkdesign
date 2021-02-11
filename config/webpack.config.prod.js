@@ -6,4 +6,4 @@ module.exports = {
         filename: 'prod.js',
         path: path.resolve(__dirname, '../', 'build')
     }
-}
+} 
