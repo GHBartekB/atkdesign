@@ -45,6 +45,19 @@ module.exports = {
                     }
                 ],
               
+            },
+            {
+                    test:/\.js$/,
+                    exclude: /node-modules/,
+                    use: {
+                        loader: 'babel-loader',
+                        options: {
+                            presets: [
+                            ['@babel/preset-env', {targets: 'defaults'}]
+                            ],
+                            plugins: ['@babel/plugin-proposal-class-properties']
+                        }
+                    }
             }
         ]
     },

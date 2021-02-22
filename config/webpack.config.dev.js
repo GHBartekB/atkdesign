@@ -34,21 +34,22 @@ module.exports = {
                             outputPath: 'images',
                         } 
                     },
-                    {
-                        loader: 'image-webpack-loader',
-                        options: {
-                            mozjpeg: {
-                                progressive: true,
-                                quality: 75,
-                            },
-                            pngquant: {
-                                quality: [0.65, 0.90],
-                            }
-                        }
-
-                    }
+    
                 ],
               
+            },
+            {
+                test:/\.js$/,
+                exclude: /node-modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: [
+                        ['@babel/preset-env', {targets: 'defaults'}]
+                        ],
+                        plugins: ['@babel/plugin-proposal-class-properties']
+                    }
+                }
             }
         ]
     },
